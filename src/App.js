@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import SignIn from './components/loginComponent';
 import SignUp from './components/signUpComponent';
 import UserDetails from './components/userDetails';
-import Course from './components/courseAvailable';
+import Courses from './components/Courses';
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
                   <Link className="nav-link active" aria-current="page" to={'/sign-up'}>Sign up</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to={'/Course'}>Courses</Link>
+                  <Link className="nav-link active" aria-current="page" to={'/Courses'}>Courses</Link>
                 </li>
               </ul>
               <form className="d-flex" role="search">
@@ -51,7 +51,7 @@ function App() {
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/userDetails" element={<UserDetails />}/>
-          <Route path="/courseAvailable" element={<Course />}/>
+          <Route path="/Courses" element={<Courses />}/>
         </Routes>
       </div>
     </Router>
